@@ -1,0 +1,344 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Bootstrap</title>
+    </head>
+
+    <body>
+        <!-- create nav using UL 
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mission</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Staff</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Testimonials</a></li>
+        </ul>
+        -->
+
+        <!-- create nav using <nav> 
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Missions Awesomeness</a>
+            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link" href="#">Staff</a>
+            <a class="nav-item nav-link" href="#">Testimonials</a>
+        </nav>
+        -->
+
+        <!-- creating simple Navigation with Navbars. 
+        Other notes: By default the navigation will allways stack 
+        <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: red;">
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Missions Awesomeness</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </div> 
+            </div> 
+        </nav>
+    -->
+
+        <!-- 
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-none d-sm-inline-block">
+                    <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" style="width: 40px;">
+                </a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Missions Awesomeness</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </div>
+                <span class="navbar-text d-none d-xl-inline-block">The best in traditional and alternative medicine</span>
+            </div>
+        </nav>
+    -->
+
+        <!-- Image  
+    <header class="clearfix mb-0" style="height: 90vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px">
+        <div class="container">
+            <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" />
+        </div>
+    </header> -->
+
+        <!-- Nav using Dropdown 
+<nav id="navbar-site" class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+
+            <div class="navbar-nav ml-sm-auto">
+                <a class="nav-item nav-link" href="#missions">Missions</a>
+
+                <div class="dropdown">
+
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicesDropdown"
+                        aria-haspopup="true" aria-expanded="false" href="#">Services</a>
+
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">Grooming</a>
+                        <a class="dropdown-item" href="#">General Health</a>
+                        <a class="dropdown-item" href="#">Nutrition</a>
+                        <a class="dropdown-item" href="#">Pest Control</a>
+                        <a class="dropdown-item" href="#">Vaccinations</a>
+                    </div> 
+                </div> 
+                <a class="nav-item nav-link" href="#">Staff</a>
+                <a class="nav-item nav-link" href="#">Testimonials</a>
+            </div> 
+     -->
+
+        <!-- Collapse-->
+
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+            <div class="container">
+
+                <!-- Burger Menu Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav"
+                    aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">Wisdom Pet Medicine</a>
+
+                <div class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">Mission</a>
+                        <a class="nav-item nav-link" href="#">Services</a>
+                        <a class="nav-item nav-link" href="#">Staff</a>
+                        <a class="nav-item nav-link" href="#">Testimonials</a>
+                    </div><!-- navbar -->
+                </div><!-- collapse -->
+            </div><!-- container -->
+        </nav><!-- nav -->
+
+
+
+
+
+
+        <!-- form 
+            <form class="form-inline">
+                <input class="form-control mr-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Go</button>
+            </form> -->
+
+
+        </div> <!-- container -->
+        </nav>
+
+        <div class="container">
+            <section class="content" id="mission">
+                <h1 class="text-danger">Our Mission</h1>
+                <p class="bg-danger text-white">Wisdom Pet Medicine strives to blend the best in traditional and
+                    alternative medicine in the
+                    diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and
+                    fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find
+                    the safest treatments and cures.</p>
+                <p class="text-capitalize">We strive to be your pet's medical <del>staff</del> experts from youth
+                    through the senior years. We
+                    build
+                    preventative health care plans for each and every one of our patients, based on breed, age, and
+                    sex, so that your pet receives the most appropriate care at crucial milestones. We want to give
+                    your pet a long and healthy life.</p>
+            </section>
+        </div> <!-- container-->
+
+        <style>
+            img {
+                width: 100px;
+                display: block;
+            }
+        </style>
+
+        <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px">
+            <div class="container">
+                <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" />
+            </div>
+        </header>
+
+        <div class="container" id="services">
+            <section class="container text-center" id="services">
+                <div class="row">
+                    <article Class="col">
+                        <img class="mx-auto" src="images/icon-exoticpets.svg" alt="Icon">
+                        <h3>Exotic Pets</h3>
+                        <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                    </article>
+
+                    <article class="col">
+                        <img class="mx-auto" src="images/icon-health.svg" alt="Icon">
+                        <h3>General Health</h3>
+                        <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our
+                            general
+                            health services.</p>
+                    </article>
+
+                    <article class="col">
+                        <img class="mx-auto" src="images/icon-nutrition.svg" alt="Icon">
+                        <h3>Nutrition</h3>
+                        <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for
+                            optimum health and disease prevention.</p>
+                    </article>
+
+                    <article class="col">
+                        <img class="mx-auto" src="images/icon-pestcontrol.svg" alt="Icon">
+                        <h3>Pest Control</h3>
+                        <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks,
+                            worms, heart worm, and other parasites.</p>
+                    </article>
+
+                    <article class="col">
+                        <img class="mx-auto" src="images/icon-vaccinations.svg" alt="Icon">
+                        <h3>Vaccinations</h3>
+                        <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the
+                            deadliest diseases in pets.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content" id="services">
+                <h2>Exotic Pets</h2>
+                <p>We <span class="font-weight-bold">offer</span> <strong class="font-weight-normal">specialized</strong>
+                    care for <em>reptiles, rodents, birds, and other exotic pets.</em></p>
+
+                <ul class="list-inline">
+                    <li><a href="#" class="text-info">Grooming</a></li>
+                    <li><a href="#" class="text-info">General Health</a></li>
+                    <li><a href="#" class="text-info">Nutrition</a></li>
+                    <li><a href="#" class="text-info">Pest Control</a></li>
+                    <li><a href="#" class="text-info">Vaccinations</a></li>
+                </ul>
+
+                <h3>Grooming</h3>
+                <p>Our therapeutic <span class="font-italic">grooming</span> treatments help battle fleas, allergic
+                    dermatitis, and other
+                    challenging skin conditions.</p>
+
+                <h4>General Health</h4>
+                <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general
+                    health services.</p>
+
+                <h5>Nutrition</h5>
+                <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum
+                    health and disease prevention.</p>
+
+                <h6>Pest Control</h6>
+                <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms,
+                    heart worm, and other parasites.</p>
+
+                <h2>Vaccinations</h2>
+                <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest
+                    diseases in pets.</p>
+            </section>
+
+
+            <section class="content" id="testimonials">
+                <h2 style="color: var(--pink)">Testimonials</h2>
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="images/testimonial-janeh.jpg" alt="Jane Photo">
+                    <figcaption class="figure-caption">
+                        During the summer, our rabbit, Tonto, began to have severe redness and itching on his belly and
+                        feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozens
+                        kinds
+                        of grass pollens. We've now been doing allergy injections for several months, and his itching
+                        and
+                        redness have nearly gone away.
+                        <div class="blockquote-footer">
+                            Jane H.
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="images/testimonial-mcphersons.jpg" alt="The McPhersons Photo">
+                    <figcaption class="figure-caption">
+                        When Samantha, our Siamese cat, began sleeping all the time and urinating excessively, we
+                        brought
+                        her to see the specialists at Wisdom. After running a blood test, Dr. Winthrop confirmed what
+                        we
+                        all feared - Samantha was showing signs of diabetes. The doctor put us on a daily routine to
+                        provide Samantha insulin injections, and showed us how to administer the shots.
+                        <div class="blockquote-footer">
+                            The McPhersons
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="images/testimonial-johnb.jpg" alt="John Photo">
+                    <figcaption class="figure-caption">
+                        The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever,
+                        Roxie,
+                        started going into sudden kidney failure. They stabilized her and provided fluids until her
+                        kidneys
+                        were again functioning normally. We learned just how toxic grapes and raisins are to pets, and
+                        Roxie is no longer allowed to roam unattended in the orchard.
+                        <div class="blockquote-footer">
+                            John B
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img class="figure-img img-fluid" src="images/testimonial-lorraines.jpg" alt="Lorraine Photo">
+                    <figcaption class="figure-caption">
+                        Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments.
+                        When
+                        our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we
+                        called
+                        around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the
+                        same
+                        day, but also was able to diagnose McAllister as having a severe case of septicemia.
+                        <div class="blockquote-footer">
+                            Lorraine S
+                        </div>
+                    </figcaption>
+                </figure>
+            </section>
+        </div> <!-- container -->
+
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+    </html>
+    <!--
+        Our Mission
+
+
+Services
+Exotic Pets
+
+
+
+
+
+
+
+
+Vaccinations
+
+Our Staff
+Dr. Winthrop
+Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.
+Dr. Chase
+Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.
+Dr Sanders
+Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.
+
+
+
+
+
+    -->

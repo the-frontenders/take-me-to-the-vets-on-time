@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Take me to the vet</title>
+    <style>
+        img,
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <!-- Burger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav" aria-controls="myTogglerNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Wisdom Pet Medicine</a>
+
+            <div class="collapse navbar-collapse" id="myTogglerNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Mission</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </diV><!-- navbar -->
+            </div><!-- collapse -->
+        </div> <!-- container -->
+    </nav>
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+
+<!-- Practice  with Forms -->
+<div class="container">
+        <h2>Medical Questionnaire</h2>
+        <form>
+            <fieldset class="form-group">
+                <legend>Owner Info</legend>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="ownername">Owner name</label>
+                    <input  class="form-control" type="text" id="ownername" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="owneremail">Email address</label>
+                    <input class="form-control" type="email" id="owneremail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="form-group">
+
+                <legend>Pet Info</legend>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="petname">Pet name</label>
+                    <input class="form-control" type="text" id="petname" placeholder="Your Pet's name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="pettype">Pet type</label>
+                    <select class="form-control" id="pettype">
+                        <option>Choose</option>
+                        <option value="cat">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="reasonforvisit">Reason for today's visit</label>
+                    <textarea class="form-control" id="reasonforvisit" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label">Has your pet been spayed or neutered?</label>
+                    <label class="form-control-label"><input class="form-control" type="radio" name="spayneut" value="yes" checked> Yes</label>
+                    <label class="form-control-label"><input class="form-control" type="radio" name="spayneut" value="no"> No</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label">Has the pet had any of the following in the past 30 days</label>
+                    <label class="form-control-label"><input class="form-control" type="checkbox"> Abdominal pain</label>
+                    <label class="form-control-label"><input class="form-control" type="checkbox"> Lack of appetite</label>
+                    <label class="form-control-label"><input class="form-control" type="checkbox"> Weakness</label>
+                </div>
+
+<!-- Practice with Checkboxes and radio classes -->
+<legend>Pet Medical Data</legend>
+
+<div class="form-group">
+    <label class="d-block">Has your pet been spayed or neutered?</label>
+
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="spayneut" value="yes" checked> Yes
+    </label>
+  </div><!-- form-check -->
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="spayneut" value="no"> No
+    </label>
+  </div><!-- form-check -->
+
+</div><!-- form-group -->
+
+<div class="form-group">
+ <label class="form-check-label">Has the pet had any of the following in the past 30 days</label>
+
+   <div class="form-check">
+      <label class="form-check-label">
+         <input class="form-check-input" type="checkbox"> Abdominal pain
+      </label>
+   </div><!-- form-check -->
+
+   <div class="form-check">
+      <label class="form-check-label">
+         <input class="form-check-input" type="checkbox"> Lack of appetite
+      </label>
+   </div><!-- form-check -->
+
+   <div class="form-check">
+       <label class="form-check-label">
+         <input class="form-check-input" type="checkbox"> Weakness
+       </label>
+   </div><!-- form-check -->
+</div><!-- form-group -->
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div><!-- content container -->
+
+    <!-- Practice with Multicolumn forms -->
+<div class="container">
+<h2>Medical Questionnaire</h2>
+
+<form>
+    <fieldset class="form-group">
+       <legend>Owner Info</legend>
+            <div class="form-group row">
+               <label class="col-form-label text-md-right col-md-2" for="ownername">Owner</label>
+               <div class="col-md-10">
+                    <input class="form-control"
+                    type="text" id="ownername" placeholder="Your Name">
+                </div>
+            </div><!-- form-group -->
+            
+            <div class="form-group form-row">
+                <label class="col-form-label text-md-right col-md-2" for="owneremail">Address</label>
+                <div class="col-md-10">
+                    <input class="form-control"
+                    type="text" id="owneremail" placeholder="Address">
+                </div>
+            </div><!-- form-group -->
+            
+            <div class="form-group row">
+                <div class="form-group offset-md-2 col">
+                <label class="col-form-label sr-only" for="ownercity">City</label>
+                    <input class="form-control"
+                      type="text" id="ownercity" placeholder="City">
+            </div><!-- form-group -->
+            
+                  <div class="form-group col">
+                    <label class="col-form-label sr-only" for="ownerzip">Zip</label>
+                    <input class="form-control"
+                      type="text" id="ownerzip" placeholder="Zip">
+                  </div><!-- form-group -->
+                </div><!-- form-group -->
+
+            <div class="form-group row">
+                <div class="offset-md-2 col-auto">
+                   <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+              </fieldset><!-- fieldset -->
+            </form>
+</div><!-- content container -->
+
+<!-- Practice with Input Forms -->
+<nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+    <div class="container">
+      <div class="navbar-brand d-none d-lg-block">Wisdom Pet Medicine</div>
+      <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Mission</a>
+        <a class="nav-item nav-link" href="#">Services</a>
+        <a class="nav-item nav-link" href="#">Staff</a>
+        <a class="nav-item nav-link" href="#">Testimonials</a>
+      </div><!-- navbar-nav -->
+
+      <form class="form-inline d-none d-md-block">
+        <div class="input-group">
+          <label class="sr-only" for="search">Search</label>
+          <input class="form-control" type="text" id="search" placeholder="Search for...">
+          <div class="input-group-append">
+             <button class="btn btn-warning" type="button">Go</button>
+          </div><!-- input-group-append -->
+        </div><!-- input-group -->
+      </form>
+    </div><!-- container -->
+  </nav>
+  
+  <div class="container mt-4">
+  <h2>Help Another Pet</h2>
+  
+  <form>
+      <fieldset class="form-group">
+        <legend>Your Info</legend>
+    
+        <div class="form-group">
+          <label class="form-control-label" for="name">Name</label>
+          <input class="form-control" type="text" id="name" placeholder="Your Name">
+        </div><!-- form-group -->
+    
+        <div class="form-group">
+          <label class="form-control-label" for="owneremail">Email</label>
+          <input class="form-control" type="text" id="owneremail" placeholder="Address">
+        </div><!-- form-group -->
+    
+        <div class="form-group">
+          <label class="form-control-label" for="donationamt">Donation Amount</label>
+          <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                     <input type="checkbox" id="confirm-donation" checked aria-label="Checkbox for confirming donation">
+                  </div>
+                </div>
+                <div class="input-group-text">$</div>
+                <input type="text" class="form-control" id="donationamt" placeholder="Amount">
+                <div class="input-group-append">
+                  <div class="input-group-text">.00</div>
+                </div>
+          </div>
+        </div><!-- form-group -->
+    
+        <button class="btn btn-primary" type="submit">Submit</button>
+    
+      </fieldset><!-- fieldset -->
+    </form>
+  </div><!-- content container -->
+
+  <!-- Practice with Interactive component -->
+  <!-- Practice with Tooltips -->
+<div class="container mt-4">
+
+<section class="content" id="mission">
+    <h1>Our Commitment <small>to you</small></h1>
+    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative 
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Exams, ultrasounds and more">medicine</a> in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+    <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy&nbsp;life.</p>
+</section>
+        
+</div><!-- content container -->
+
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<!-- Practice with PopOvers -->   
+<div class="container mt-4">
+
+    <h1>Our Commitment <small>to you</small></h1>
+    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+    <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy&nbsp;life.</p>
+  
+    <button type="button" class="btn btn-info"
+       data-toggle="popover"
+       data-placement="top"
+       title="Standard Checkups"
+       data-content="Out standard checkups offer Ultrasounds, X-rays and dental cleanings.">
+       Checkup Info
+    </button>
+  </div><!-- content container -->
+
+<!-- Practice with Alerts -->
+<div class="container mt-4">
+
+    <h1>Our Commitment <small>to you</small></h1>
+    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+  
+    <div class="alert alert-info alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="alert-heading">Standard Checkups</h4>
+      <p class="mb-2">Our standard checkups offer ultrasounds, x-rays and dental cleanings.</p>
+      <a class="alert-link" href="#">More Info</a>
+    </div>
+  
+    <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy&nbsp;life.</p>
+  
+</div><!-- content container -->
+
+<!-- Practice with Dropdown. Issue the menu of the dropdown was not displayed -->
+<div class="container mt-4">
+
+    <h1>Our Commitment <small>to you</small></h1>
+    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+    
+    <div class="dropdown">
+       <button class="btn btn-primary dropdown-toggle"
+          type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Services
+       </button>
+    
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-header">Service Options</div>
+        <a class="dropdown-item" href="#">Grooming</a>
+        <a class="dropdown-item" href="#">General Health</a>
+        <a class="dropdown-item" href="#">Nutrition</a>
+        <a class="dropdown-item" href="#">Pest Control</a>
+        <a class="dropdown-item" href="#">Vaccinations</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Other</a>
+      </div>
+    </div><!-- dropdown -->
+  
+    <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy&nbsp;life.</p>
+</div><!-- content container -->
+
+<!-- Practice with Collapse and Accordions -->
+<div class="container">
+    <div class="row">
+      <section class="col-12">
+  
+  <h2>Services</h2>
+  
+  <!-- The Pest control button doesn't hide the text when clicked the second time. Collapse doesn't function-->
+  
+  <button class="btn btn-primary mb-3" data-toggle="collapse" 
+  data-target="#pestcontrol" aria-expanded="List to Pest Control">Pest Control</button>
+  <div id="pestcontrol  mb-3" class="collapse">
+    We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.
+  </div>
+
+<div id="servicesaccordion" role="tablist" aria-multiselectable="true">
+  
+    <div class="card">
+  
+      <div class="card-header" role="tab" id="groomingheading">
+        <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#servicesaccordion" 
+            href="#grooming" aria-expanded="true" 
+            aria-controls="grooming">Grooming</a>
+        </h5>
+      </div><!-- card header -->
+  
+      <div id="grooming" class="collapse show"
+          role="tabpanel" aria-labelledby="groomingheading">
+        <div class="card-block">
+          <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+        </div>
+      </div><!-- collapse -->
+  
+    </div><!-- card -->
+  
+    <div class="card">
+  
+      <div class="card-header" id="generalhealthheading">
+        <h5 class="mb-0"><a href="#generalhealth">General Health</a></h5>
+      </div><!-- card header -->
+  
+      <div id="generalhealth">
+        <div class="card-block">
+          <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+        </div>
+      </div><!-- card collapse -->
+  
+    </div><!-- card -->
+  
+    <div class="card">
+  
+      <div class="card-header" role="tab" id="nutritionheading">
+        <h5 class="mb-0"><a href="#nutrition">Nutrition</a></h5>
+      </div><!-- card header -->
+  
+      <div id="nutrition">
+        <div class="card-block">
+          <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+        </div>
+      </div><!-- collapse -->
+  
+    </div><!-- card -->
+  
+</div><!-- servicesaccordion -->
+      </section>
+    </div><!-- row -->
+  </div><!-- content container -->

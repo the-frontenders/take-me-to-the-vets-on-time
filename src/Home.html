@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Take me to the vet</title>
+    <style>
+        img,
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <!-- Burger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav" aria-controls="myTogglerNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Wisdom Pet Medicine</a>
+
+            <div class="collapse navbar-collapse" id="myTogglerNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Mission</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </diV><!-- navbar -->
+            </div><!-- collapse -->
+        </div> <!-- container -->
+    </nav>
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+    <!-- Main Content: Our Mission -->
+    <div class="container">
+        <section class="content" id="mission">
+            <h1 class="text-danger">Our Mission</h1>
+            <p class="bg-light text-secondary">Wisdom Pet Medicine strives to blend the best in traditional and
+                alternative medicine in the diagnosis
+                and
+                treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the
+                wisdom
+                garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and
+                cures.</p>
+            <p class="bg-light text-secondary">We strive to be your pet's medical staff experts from youth through the
+                senior years. We build
+                preventative
+                health care plans for each and every one of our patients, based on breed, age, and sex, so that your
+                pet
+                receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy
+                life.</p>
+        </section>
+    </div><!-- container -->
+
+    <!-- Services Logo -->
+    <div class="container" id="services">
+        <section class="container text-center" id="services">
+            <div class="row">
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-health.svg" alt="Icon">
+                    <h3>General Health</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general
+                        health services.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for
+                        optimum
+                        health and disease prevention.</p>
+                    </h3>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks,
+                        worms,
+                        heart worm, and other parasites.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccination</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the
+                        deadliest
+                        diseases in pets.</p>
+                </article>
+            </div><!-- row -->
+        </section>
+    </div><!-- container -->
+
+    <!-- Medical Questionnaire -->
+    <div class="container">
+        <h2>Medical Questionnaire</h2>
+        <form>
+            <fieldset class="form-group">
+                <legend>Owner Info</legend>
+                <div class="form-group">
+                    <label class="form-control-label" for="ownername">Owner Name</label>
+                    <input class="form-control" type="text" id="ownername" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="owneremail">Email address</label>
+                    <input  class="form-control" type="email" id="owneremail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pet info</legend>
+
+                <div>
+                    <label>Pet name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Pet type</label>
+                    <select>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <!-- 
+                1.1 Owner Name. Placeholder "Your name"
+                1.2 Email address. Placeholder "Enter email"
+                1.3 info "We'll never share your email". display: under email address input field
+
+
+                
+
+
+                2.1 "Pet name". Placeholder "Your Pet's name"
+                2.2 "Pet type". Dropdown: Dog, Cat, Other. Placeholder "Choose"
+                2.3 Reason for today's visit: input that can be extended depending on the number of characters filled
+                in.
+
+                <legend>Pet Medical Data</legend>
+                2.4
+                2.4.1 Radio buton: "Has your pet been spayed or neutered?" Yes No - 2 radio buttons
+                2.4.2 "Has the pet had any of the following in the past 30 days" - 3 checkbox
+                Abdominal pain
+                Lack of appetite
+                Weakness
+
+                Submit button - bg blue, text color: white
+      
+
+-->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Take me to the vet</title>
+    <style>
+        img,
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Practice with Input Forms on Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand d-none d-lg-block">Take me to the vet</div>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="http://localhost:3000//Home.html">Home</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/about.html">About</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/services.html">Services</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/prices.html">Prices</a>
+                <a class="nav-item nav-link" href="http://localhost:3000//Staff.html">Staff</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/testimonials.html">Testimonials</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/questionnaire.html">Questionnaire</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/help.html">Help</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/Pet%20story.html">Pet story</a>
+            </div><!-- navbar-nav -->
+
+            <form class="form-inline d-none d-md-block">
+                <div class="input-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input class="form-control" type="text" id="search" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Go</button>
+                    </div><!-- input-group-append -->
+                </div><!-- input-group -->
+            </form>
+        </div><!-- container -->
+    </nav>
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+
+    <!-- Practice  with Forms -->
+    <div class="container">
+        <h1 class="text-danger">Medical Questionnaire</h1>
+        <p>We belive that Questionnaires are a real <q>Pain in the ass</q> that's why our form only contains the
+            essential questions. These will help us to offer you a quick answer about what's wrong with your pet. The
+            form also offers valuable information in order to identify the emergencies and offer quick assistance.<br>
+            Thank you for your time to give us essential information.
+        </p>
+        <form>
+            <fieldset class="form-group">
+                <legend class="text-danger">Owner Info</legend>
+                <div class="form-group">
+                    <label class="form-control-label" for="ownername">Owner name</label>
+                    <input class="form-control" type="text" id="ownername" placeholder="Your Name">
+                </div><!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="owneremail">Email address</label>
+                    <input class="form-control" type="email" id="owneremail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+                </div><!-- form-group -->
+
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="text-danger">Pet Info</legend>
+                <div class="form-group">
+                    <label class="form-control-label" for="petname">Pet name</label>
+                    <input class="form-control" type="text" id="petname" placeholder="Your Pet's name">
+                </div><!-- form-group -->
+                <div class="form-group">
+                    <label class="form-control-label" for="pettype">Pet type</label>
+                    <select class="form-control" id="pettype">
+                        <option>Choose</option>
+                        <option value="cat">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Other</option>
+                    </select>
+                </div><!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="reasonforvisit">Reason for today's visit</label>
+                    <textarea class="form-control" id="reasonforvisit" rows="3"></textarea>
+                </div><!-- form-group -->
+
+                <!-- Practice with Checkboxes and radio classes -->
+                <legend class="text-danger">Pet Medical Data</legend>
+                <div class="form-group">
+                    <label class="d-block">Has your pet been spayed or neutered?</label>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="spayneut" value="yes" checked> Yes
+                        </label>
+                    </div><!-- form-check -->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="spayneut" value="no"> No
+                        </label>
+                    </div><!-- form-check -->
+                </div><!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-check-label">Has the pet had any of the following in the past 30 days</label>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Abdominal pain
+                        </label>
+                    </div><!-- form-check -->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Lack of appetite
+                        </label>
+                    </div><!-- form-check -->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Weakness
+                        </label>
+                    </div><!-- form-check -->
+                </div><!-- form-group -->
+            </fieldset>
+            <button class="btn btn-primary mb-4" type="submit">Submit</button>
+        </form>
+    </div><!-- content container -->
+
+    <footer class="bd-footer bg-secondary text-light">
+        <div class="container-fluid p-3 p-md-5">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+
+            <ul class="bd-footer-links">
+                <li><a href="http://localhost:3000//Home.html">Home</a></li>
+                <li><a href="http://localhost:3000/about.html">About</a></li>
+                <li><a href="http://localhost:3000/services.html">Services</a></li>
+                <li><a href="http://localhost:3000/prices.html">Prices</a></li>
+                <li><a href="http://localhost:3000//Staff.html">Staff</a></li>
+                <li><a href="http://localhost:3000/testimonials.html">Testimonials</a></li>
+                <li><a href="http://localhost:3000/questionnaire.html">Questionnaire</a></li>
+                <li><a href="http://localhost:3000/help.html">Help</a></li>
+                <li><a href="http://localhost:3000/Pet%20story.html">Pet story</a></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </footer>
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>

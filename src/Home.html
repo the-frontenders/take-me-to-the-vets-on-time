@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Take me to the vet</title>
+    <style>
+        img,
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Practice with Input Forms on Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand d-none d-lg-block">Take me to the vet</div>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="http://localhost:3000//Home.html">Home</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/about.html">About</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/services.html">Services</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/prices.html">Prices</a>
+                <a class="nav-item nav-link" href="http://localhost:3000//Staff.html">Staff</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/testimonials.html">Testimonials</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/questionnaire.html">Questionnaire</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/help.html">Help</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/Pet%20story.html">Pet story</a>
+            </div><!-- navbar-nav -->
+
+            <form class="form-inline d-none d-md-block">
+                <div class="input-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input class="form-control" type="text" id="search" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Go</button>
+                    </div><!-- input-group-append -->
+                </div><!-- input-group -->
+            </form>
+        </div><!-- container -->
+    </nav>
+
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+    <!-- Practice with Breadcrumbs-->
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <!-- If you use an external .css document, loaded before the Bootstrap style link -->
+                <style>
+                    .breadcrumb-item+.breadcrumb-item::before {
+                        content: '>'
+                    }
+                </style>
+
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item active" href="#">Home</a>
+                    <a class="breadcrumb-item" href="#">Exotic Pets</a>
+                    <a class="breadcrumb-item" href="#">Nutrition</a>
+                </nav>
+
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+
+    <!-- Main Content: Our Mission -->
+    <div class="container">
+        <section class="content" id="mission">
+            <h1 class="text-danger">Our Mission</h1>
+            <p class="bg-light text-secondary">Wisdom Pet Medicine strives to blend the best in traditional and
+                alternative medicine in the diagnosis
+                and
+                treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the
+                wisdom
+                garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and
+                cures.</p>
+            <p class="bg-light text-secondary">We strive to be your pet's medical staff experts from youth through the
+                senior years. We build
+                preventative
+                health care plans for each and every one of our patients, based on breed, age, and sex, so that your
+                pet
+                receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy
+                life.</p>
+        </section>
+    </div><!-- container -->
+
+    <!-- Services Logo -->
+    <div class="container" id="services">
+        <section class="container text-center" id="services">
+            <div class="row">
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-health.svg" alt="Icon">
+                    <h3>General Health</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general
+                        health services.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for
+                        optimum
+                        health and disease prevention.</p>
+                    </h3>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks,
+                        worms,
+                        heart worm, and other parasites.</p>
+                </article>
+
+                <article class="col">
+                    <img class="icon mx-auto" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccination</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the
+                        deadliest
+                        diseases in pets.</p>
+                </article>
+            </div><!-- row -->
+        </section>
+    </div><!-- container -->
+
+    <footer class="bd-footer bg-secondary text-light">
+        <div class="container-fluid p-3 p-md-5">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+
+            <ul class="bd-footer-links">
+                <li><a href="http://localhost:3000//Home.html">Home</a></li>
+                <li><a href="http://localhost:3000/about.html">About</a></li>
+                <li><a href="http://localhost:3000/services.html">Services</a></li>
+                <li><a href="http://localhost:3000/prices.html">Prices</a></li>
+                <li><a href="http://localhost:3000//Staff.html">Staff</a></li>
+                <li><a href="http://localhost:3000/testimonials.html">Testimonials</a></li>
+                <li><a href="http://localhost:3000/questionnaire.html">Questionnaire</a></li>
+                <li><a href="http://localhost:3000/help.html">Help</a></li>
+                <li><a href="http://localhost:3000/Pet%20story.html">Pet story</a></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </footer>
+</body>
+
+</html>

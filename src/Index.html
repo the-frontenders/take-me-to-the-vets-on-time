@@ -1,17 +1,65 @@
-<DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <title>Bootstrap</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap</title>
+    <style>
+        img {
+                    width: 400px;
+                    display: block;
+                }
 
-    <body>
-        <!-- create nav using UL 
+                .icon {
+                      width: 100px;
+                  }      
+        </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-site" data-offset="80">
+
+    <!-- Practice with Scrollspy -->
+    <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#mission">Tuia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#staff">Staff</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        </div><!-- navbar-nav -->
+        </ul><!-- container -->
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <!-- Burger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav" aria-controls="myTogglerNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Wisdom Pet Medicine</a>
+
+            <div class="collapse navbar-collapse" id="myTogglerNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Mission</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </diV><!-- navbar -->
+            </div><!-- collapse -->
+        </div> <!-- container -->
+    </nav>
+
+
+
+    <!-- create nav using UL 
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Mission</a></li>
@@ -21,7 +69,7 @@
         </ul>
         -->
 
-        <!-- create nav using <nav> 
+    <!-- create nav using <nav> 
         <nav class="nav nav-pills flex-column flex-sm-row">
             <a class="nav-item nav-link active" href="#">Home</a>
             <a class="nav-item nav-link" href="#">Missions Awesomeness</a>
@@ -31,7 +79,7 @@
         </nav>
         -->
 
-        <!-- creating simple Navigation with Navbars. 
+    <!-- creating simple Navigation with Navbars. 
         Other notes: By default the navigation will allways stack 
         <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: red;">
             <div class="container">
@@ -46,7 +94,7 @@
         </nav>
     -->
 
-        <!-- 
+    <!-- Practice with Nav
         <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
             <div class="container">
                 <a href="#" class="navbar-brand d-none d-sm-inline-block">
@@ -64,14 +112,14 @@
         </nav>
     -->
 
-        <!-- Image  
+    <!-- Practice with Nav  
     <header class="clearfix mb-0" style="height: 90vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px">
         <div class="container">
             <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" />
         </div>
     </header> -->
 
-        <!-- Nav using Dropdown 
+    <!-- Nav using Dropdown 
 <nav id="navbar-site" class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
 
@@ -79,10 +127,9 @@
                 <a class="nav-item nav-link" href="#missions">Missions</a>
 
                 <div class="dropdown">
-
                     <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicesDropdown"
-                        aria-haspopup="true" aria-expanded="false" href="#">Services</a>
-
+                        aria-haspopup="true" aria-expanded="false" href="#">Services
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                         <a class="dropdown-item" href="#">Grooming</a>
                         <a class="dropdown-item" href="#">General Health</a>
@@ -91,254 +138,879 @@
                         <a class="dropdown-item" href="#">Vaccinations</a>
                     </div> 
                 </div> 
-                <a class="nav-item nav-link" href="#">Staff</a>
-                <a class="nav-item nav-link" href="#">Testimonials</a>
+                <div>
+                   <a class="nav-item nav-link" href="#">Staff</a>
+                   <a class="nav-item nav-link" href="#">Testimonials</a>
+                </div>
             </div> 
+        </div> 
+</nav> 
      -->
 
-        <!-- Collapse-->
+    <!-- Collapse-->
 
-        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-            <div class="container">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
 
-                <!-- Burger Menu Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav"
-                    aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Burger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#TogglerNav" aria-controls="myTogglerNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a href="#" class="navbar-brand">Wisdom Pet Medicine</a>
+            <a href="#" class="navbar-brand">Wisdom Pet Medicine</a>
 
-                <div class="collapse navbar-collapse" id="myTogglerNav">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Home</a>
-                        <a class="nav-item nav-link" href="#">Mission</a>
-                        <a class="nav-item nav-link" href="#">Services</a>
-                        <a class="nav-item nav-link" href="#">Staff</a>
-                        <a class="nav-item nav-link" href="#">Testimonials</a>
-                    </div><!-- navbar -->
-                </div><!-- collapse -->
-            </div><!-- container -->
-        </nav><!-- nav -->
+            <div class="collapse navbar-collapse" id="myTogglerNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Mission</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="#">Staff</a>
+                    <a class="nav-item nav-link" href="#">Testimonials</a>
+                </div><!-- navbar -->
+            </div><!-- collapse -->
+        </div><!-- container -->
+    </nav><!-- nav -->
 
-
-
-
-
-
-        <!-- form 
+    <!-- form 
             <form class="form-inline">
                 <input class="form-control mr-2" type="text" placeholder="Search">
                 <button class="btn btn-outline-light" type="submit">Go</button>
             </form> -->
 
+    <div class="container">
+        <section class="content" id="mission">
+            <h1 class="text-danger">Our Mission</h1>
+            <p class="bg-danger text-white">Wisdom Pet Medicine strives to blend the best in traditional and
+                alternative medicine in the
+                diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents,
+                and
+                fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to
+                find
+                the safest treatments and cures.</p>
+            <p class="text-capitalize">We strive to be your pet's medical <del>staff</del> experts from youth
+                through the senior years. We
+                build
+                preventative health care plans for each and every one of our patients, based on breed, age, and
+                sex, so that your pet receives the most appropriate care at crucial milestones. We want to give
+                your pet a long and healthy life.</p>
+        </section>
+    </div> <!-- container-->
 
-        </div> <!-- container -->
-        </nav>
 
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
         <div class="container">
-            <section class="content" id="mission">
-                <h1 class="text-danger">Our Mission</h1>
-                <p class="bg-danger text-white">Wisdom Pet Medicine strives to blend the best in traditional and
-                    alternative medicine in the
-                    diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and
-                    fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find
-                    the safest treatments and cures.</p>
-                <p class="text-capitalize">We strive to be your pet's medical <del>staff</del> experts from youth
-                    through the senior years. We
-                    build
-                    preventative health care plans for each and every one of our patients, based on breed, age, and
-                    sex, so that your pet receives the most appropriate care at crucial milestones. We want to give
-                    your pet a long and healthy life.</p>
-            </section>
-        </div> <!-- container-->
+            <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" />
+        </div>
+    </header>
 
-        <style>
-            img {
-                width: 100px;
-                display: block;
-            }
-        </style>
 
-        <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px">
-            <div class="container">
-                <img src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo" />
+    <!-- Services -->
+
+
+
+
+    <!-- Practice with buttons 
+        <div class="container">
+            <div class="row">
+                <section class="col-12">
+
+                    <h2>Types</h2>
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="button" value="Input">
+
+                    <h2>Contextual Classes</h2>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-dark">Dark</button>
+
+                    <h2>Outline</h2>
+                    <button class="btn btn-outline-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-outline-success">Success</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-info">Info</button>
+                    <button class="btn btn-outline-light">Light</button>
+                    <button class="btn btn-outline-dark">Dark</button>
+
+                    <h2>Sizes</h2>
+                    <button class="btn btn-primary">Default</button>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary btn-block">Block</button>
+
+                    <h2>States</h2>
+                    <h3>Active</h3>
+                    <button class="btn btn-primary active">Active Button</button>
+
+                    <h3>Disabled</h3>
+                    <button class="btn btn-primary disabled">Disabled Button</button>
+                    <a class="btn btn-primary disabled" href="#">Disabled Link Button</a>
+
+
+                </section>
             </div>
-        </header>
-
-        <div class="container" id="services">
-            <section class="container text-center" id="services">
-                <div class="row">
-                    <article Class="col">
-                        <img class="mx-auto" src="images/icon-exoticpets.svg" alt="Icon">
-                        <h3>Exotic Pets</h3>
-                        <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
-                    </article>
-
-                    <article class="col">
-                        <img class="mx-auto" src="images/icon-health.svg" alt="Icon">
-                        <h3>General Health</h3>
-                        <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our
-                            general
-                            health services.</p>
-                    </article>
-
-                    <article class="col">
-                        <img class="mx-auto" src="images/icon-nutrition.svg" alt="Icon">
-                        <h3>Nutrition</h3>
-                        <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for
-                            optimum health and disease prevention.</p>
-                    </article>
-
-                    <article class="col">
-                        <img class="mx-auto" src="images/icon-pestcontrol.svg" alt="Icon">
-                        <h3>Pest Control</h3>
-                        <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks,
-                            worms, heart worm, and other parasites.</p>
-                    </article>
-
-                    <article class="col">
-                        <img class="mx-auto" src="images/icon-vaccinations.svg" alt="Icon">
-                        <h3>Vaccinations</h3>
-                        <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the
-                            deadliest diseases in pets.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="content" id="services">
-                <h2>Exotic Pets</h2>
-                <p>We <span class="font-weight-bold">offer</span> <strong class="font-weight-normal">specialized</strong>
-                    care for <em>reptiles, rodents, birds, and other exotic pets.</em></p>
-
-                <ul class="list-inline">
-                    <li><a href="#" class="text-info">Grooming</a></li>
-                    <li><a href="#" class="text-info">General Health</a></li>
-                    <li><a href="#" class="text-info">Nutrition</a></li>
-                    <li><a href="#" class="text-info">Pest Control</a></li>
-                    <li><a href="#" class="text-info">Vaccinations</a></li>
-                </ul>
-
-                <h3>Grooming</h3>
-                <p>Our therapeutic <span class="font-italic">grooming</span> treatments help battle fleas, allergic
-                    dermatitis, and other
-                    challenging skin conditions.</p>
-
-                <h4>General Health</h4>
-                <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general
-                    health services.</p>
-
-                <h5>Nutrition</h5>
-                <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum
-                    health and disease prevention.</p>
-
-                <h6>Pest Control</h6>
-                <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms,
-                    heart worm, and other parasites.</p>
-
-                <h2>Vaccinations</h2>
-                <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest
-                    diseases in pets.</p>
-            </section>
-
-
-            <section class="content" id="testimonials">
-                <h2 style="color: var(--pink)">Testimonials</h2>
-                <figure class="figure">
-                    <img class="figure-img img-fluid" src="images/testimonial-janeh.jpg" alt="Jane Photo">
-                    <figcaption class="figure-caption">
-                        During the summer, our rabbit, Tonto, began to have severe redness and itching on his belly and
-                        feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozens
-                        kinds
-                        of grass pollens. We've now been doing allergy injections for several months, and his itching
-                        and
-                        redness have nearly gone away.
-                        <div class="blockquote-footer">
-                            Jane H.
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="figure">
-                    <img class="figure-img img-fluid" src="images/testimonial-mcphersons.jpg" alt="The McPhersons Photo">
-                    <figcaption class="figure-caption">
-                        When Samantha, our Siamese cat, began sleeping all the time and urinating excessively, we
-                        brought
-                        her to see the specialists at Wisdom. After running a blood test, Dr. Winthrop confirmed what
-                        we
-                        all feared - Samantha was showing signs of diabetes. The doctor put us on a daily routine to
-                        provide Samantha insulin injections, and showed us how to administer the shots.
-                        <div class="blockquote-footer">
-                            The McPhersons
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="figure">
-                    <img class="figure-img img-fluid" src="images/testimonial-johnb.jpg" alt="John Photo">
-                    <figcaption class="figure-caption">
-                        The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever,
-                        Roxie,
-                        started going into sudden kidney failure. They stabilized her and provided fluids until her
-                        kidneys
-                        were again functioning normally. We learned just how toxic grapes and raisins are to pets, and
-                        Roxie is no longer allowed to roam unattended in the orchard.
-                        <div class="blockquote-footer">
-                            John B
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img class="figure-img img-fluid" src="images/testimonial-lorraines.jpg" alt="Lorraine Photo">
-                    <figcaption class="figure-caption">
-                        Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments.
-                        When
-                        our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we
-                        called
-                        around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the
-                        same
-                        day, but also was able to diagnose McAllister as having a severe case of septicemia.
-                        <div class="blockquote-footer">
-                            Lorraine S
-                        </div>
-                    </figcaption>
-                </figure>
-            </section>
-        </div> <!-- container -->
-
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-
-    </html>
-    <!--
-        Our Mission
-
-
-Services
-Exotic Pets
-
-
-
-
-
-
-
-
-Vaccinations
-
-Our Staff
-Dr. Winthrop
-Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.
-Dr. Chase
-Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.
-Dr Sanders
-Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.
-
-
-
-
-
+        </div>
     -->
+
+    <!-- Practice with Buttons group
+        <div class="container">
+            <div class="row">
+                <section class="col-12">
+
+                    <h1>Our Mission</h1>
+                    <div class="btn-toolbar" aria-label="All Pets">
+                        <div class="btn-group btn-group-lg mb-2 mr-2" aria-label="Common Pets">
+                            <button type="button" class="btn btn-primary active">Cat</button>
+                            <button type="button" class="btn btn-primary">Dog</button>
+                            <button type="button" class="btn btn-primary">Fish</button>
+                            <button type="button" class="btn btn-primary">Bird</button>
+                        </div>
+
+                       aria labels gives to the screen readers a little bit of more data that can be read to a user 
+                        <div class="btn-group btn-group-sm mb-2" aria-label="Exotic Pets">
+                            <button type="button" class="btn btn-primary">Amphibian</button>
+                            <button type="button" class="btn btn-primary active">Reptile</button>
+                            <button type="button" class="btn btn-primary">Other</button>
+                        </div>
+                    </div>
+
+                   Vertical button group 
+                    <div class="btn-group btn-group-vertical mb-2" aria-label="Exotic Pets">
+                        <button type="button" class="btn btn-primary">Amphibian</button>
+                        <button type="button" class="btn btn-primary active">Reptile</button>
+                        <button type="button" class="btn btn-primary">Other</button>
+                    </div>
+
+                    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the
+                        diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents,
+                        and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine,
+                        to find the safest treatments and cures.
+                    </p>
+
+                    <p>We strive to be your pet's medical experts from youth through the senior years. We build
+                        preventative health care plans for each and every one of our patients, based on breed, age, and
+                        sex, so that your pet receives the most appropriate care at crucial milestones. We want to give
+                        your pet a long and healthy life.
+                    </p>
+
+
+                </section>
+            </div>
+        </div>
+    -->
+
+    <!-- Practice with Badges
+        <section class="content" id="mission">
+            <h1>Our Commitment <span class="badge badge-secondary">to you</span></h1>
+            <p class="lead">Wisdom Pet Medicine strives to blend the best in traditional and <em>alternative medicine</em>
+                in the <strong>diagnosis and treatment</strong> of companion animals including dogs, cats, birds,
+                reptiles, rodents, and fish. We apply the wisdom garnered in the <mark>centuries old tradition</mark>
+                of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+            <p><span class="badge badge-info badge-pill">new</span>We strive to be your pet's medical <del>staff</del> experts from youth through the senior years. <small>We
+                    build preventative health care plans for each and every one of our patients, based on breed, age,
+                    and sex, so that your pet receives the most appropriate care at crucial milestones.</small> We want
+                to give your pet a long and healthy&nbsp;life.</p>
+        </section>
+
+        <section class="content" id="services">
+            <div class="display-4">Exotic Pets</div>
+            <p>We offer <strong>specialized</strong> care for <em>reptiles, rodents, birds,</em> and other exotic pets.</p>
+            
+            <h3>Grooming <span class="badge badge-danger badge-pill">new</span></h3>
+            <p>Our therapeutic <span>grooming</span> treatments help battle fleas, allergic dermatitis, and other
+                challenging skin conditions.</p>
+            -->
+    <!-- Practice with Multicolumn forms -->
+    <div class="container">
+        <h2>Medical Questionnaire</h2>
+
+        <form>
+            <fieldset class="form-group">
+                <legend>Owner Info</legend>
+                <div class="form-group row">
+                    <label class="col-form-label text-md-right col-md-2" for="ownername">Owner</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="ownername" placeholder="Your Name">
+                    </div>
+                </div><!-- form-group -->
+                <div class="form-group form-row">
+                    <label class="col-form-label text-md-right col-md-2" for="owneremail">Address</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="owneremail" placeholder="Address">
+                    </div>
+                </div><!-- form-group -->
+
+                <div class="form-group row">
+                    <div class="form-group offset-md-2 col">
+                        <label class="col-form-label sr-only" for="ownercity">City</label>
+                        <input class="form-control" type="text" id="ownercity" placeholder="City">
+                    </div><!-- form-group -->
+
+                    <div class="form-group col">
+                        <label class="col-form-label sr-only" for="ownerzip">Zip</label>
+                        <input class="form-control" type="text" id="ownerzip" placeholder="Zip">
+                    </div><!-- form-group -->
+                </div><!-- form-group -->
+
+
+                <div class="form-group row">
+                    <div class="offset-md-2 col-auto">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </fieldset><!-- fieldset -->
+        </form>
+    </div><!-- content container -->
+
+    <!-- Practice with Input Forms -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand d-none d-lg-block">Wisdom Pet Medicine</div>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Mission</a>
+                <a class="nav-item nav-link" href="#">Services</a>
+                <a class="nav-item nav-link" href="#">Staff</a>
+                <a class="nav-item nav-link" href="#">Testimonials</a>
+            </div><!-- navbar-nav -->
+
+            <form class="form-inline d-none d-md-block">
+                <div class="input-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input class="form-control" type="text" id="search" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Go</button>
+                    </div><!-- input-group-append -->
+                </div><!-- input-group -->
+            </form>
+        </div><!-- container -->
+    </nav>
+
+    <!-- Practice with Multicolumn forms -->
+    <div class="container">
+        <h1 class="text-danger">Medical Questionnaire</h1>
+
+        <form>
+            <fieldset class="form-group">
+                <legend>Owner Info</legend>
+                <div class="form-group row">
+                    <label class="col-form-label text-md-right col-md-2" for="ownername">Owner</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="ownername" placeholder="Your Name">
+                    </div>
+                </div><!-- form-group -->
+
+                <div class="form-group form-row">
+                    <label class="col-form-label text-md-right col-md-2" for="owneremail">Address</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="owneremail" placeholder="Address">
+                    </div>
+                </div><!-- form-group -->
+
+                <div class="form-group row">
+                    <div class="form-group offset-md-2 col">
+                        <label class="col-form-label sr-only" for="ownercity">City</label>
+                        <input class="form-control" type="text" id="ownercity" placeholder="City">
+                    </div><!-- form-group -->
+
+                    <div class="form-group col">
+                        <label class="col-form-label sr-only" for="ownerzip">Zip</label>
+                        <input class="form-control" type="text" id="ownerzip" placeholder="Zip">
+                    </div><!-- form-group -->
+                </div><!-- form-group -->
+
+
+                <div class="form-group row">
+                    <div class="offset-md-2 col-auto">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </fieldset><!-- fieldset -->
+        </form>
+    </div><!-- content container -->
+
+    <!-- Practice with cards -->
+    <div class="container">
+
+        <section class="card mb-5" id="drwinthrop">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Stanley Winthrop</h2>
+                <h5 class="card-subtitle">Behaviorist</h5>
+            </div>
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
+                <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he
+                    adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and
+                    works tireless hours outside the clinic, performing free spay and neuter surgeries for the
+                    shelter.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card mb-5" id="drwinthrop">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
+                <h2 class="card-title">Dr. Stanley Winthrop</h2>
+                <h5 class="card-subtitle">Behaviorist</h5>
+                <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he
+                    adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and
+                    works tireless hours outside the clinic, performing free spay and neuter surgeries for the
+                    shelter.</p>
+                <a class="card-link" href="#">About Me</a>
+                <a class="card-link" href="#">My Pets</a>
+                <a class="card-link" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5 bg-primary text-light" id="drchase">
+            <img class="card-img-top img-fluid" src="images/doctor-chase.jpg" alt="Doctor Chase Photo">
+            <div class="card-body">
+                <h2 class="card-title">Dr. Elizabeth Chase</h2>
+                <h5 class="card-subtitle">Dentistry</h5>
+                <p class="card-text">Dr. Chase spends much of her free time helping the local bunny rescue
+                    organization find homes
+                    for
+                    bunnies, such as Kibbles - a Dalmatian bunny who is part of the large Chase household,
+                    including
+                    two dogs, three cats, and a turtle.</p>
+                <a class="card-link text-light" href="#">About Me</a>
+                <a class="card-link text-light" href="#">My Pets</a>
+                <a class="card-link text-light" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5 bg-primary text-light" id="drchase">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-chase.jpg" alt="Doctor Chase Photo">
+                <h2 class="card-title">Dr. Elizabeth Chase</h2>
+                <h5 class="card-subtitle">Dentistry</h5>
+                <p class="card-text">Dr. Chase spends much of her free time helping the local bunny rescue
+                    organization find homes
+                    for
+                    bunnies, such as Kibbles - a Dalmatian bunny who is part of the large Chase household,
+                    including
+                    two dogs, three cats, and a turtle.</p>
+                <a class="card-link text-light" href="#">About Me</a>
+                <a class="card-link text-light" href="#">My Pets</a>
+                <a class="card-link text-light" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5 border-warning" id="drsanders">
+            <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+            <div class="card-img-overlay">
+                <h2 class="card-title">Dr. Kenneth Sanders</h2>
+                <h5 class="card-subtitle">Nutritionist</h5>
+                <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new house.
+                    After searching
+                    for
+                    weeks
+                    for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three
+                    cats.</p>
+                <a class="card-link" href="#">About Me</a>
+                <a class="card-link" href="#">My Pets</a>
+                <a class="card-link" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5 border-warning" id="drsanders">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+                <h2 class="card-title">Dr. Kenneth Sanders</h2>
+                <h5 class="card-subtitle">Nutritionist</h5>
+                <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new house.
+                    After searching
+                    for
+                    weeks
+                    for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three
+                    cats.</p>
+                <a class="card-link" href="#">About Me</a>
+                <a class="card-link" href="#">My Pets</a>
+                <a class="card-link" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5" id="drsanders">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+                <h2 class="card-title">Dr. Kenneth Sanders</h2>
+                <h5 class="card-subtitle">Nutritionist</h5>
+                <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new house.
+                    After searching
+                    for
+                    weeks
+                    for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three
+                    cats.</p>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item" href="#">About Me</a>
+                <a class="list-group-item" href="#">My Pets</a>
+                <a class="list-group-item" href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="card mb-5" id="drgardner">
+            <img class="card-img img-fluid" src="images/doctor-gardner.jpg" alt="Doctor Gardner Photo">
+            <h2 class="card-text">Dr. Michael Gardner</h2>
+            <h5 class="card-subtitle">Practitioner</h5>
+            <p class="card-text">When Dr. Gardner was 8 his family moved to Colorado, where he spent most of his
+                free time playing on
+                his
+                neighbors farm. He came to love spending time with the horses, chickens, and goats. He still
+                considers
+                all of his family's farm animals his own, but Frank, his Cattle dog is his nearest and dearest
+                friend.</p>
+            <a class="card-link" href="#">About Me</a>
+            <a class="card-link" href="#">My Pets</a>
+            <a class="card-link" href="#">Client Slideshow</a>
+        </section>
+
+        <section class="card mb-5" id="drruiz">
+            <img class="card-img img-fluid" src="images/doctor-ruiz.jpg" alt="Doctor Ruiz Photo">
+            <h2 class="card-title">Dr. Brook Ruiz</h2>
+            <h5 class="card-subtitle">Radiology</h5>
+            <p class="card-text">Dr. Brook has spent countless hours helping the local animal shelter with injured
+                animals ,that find
+                their way into their doors. She recently adopted a new feline friend, Trish, that she helped rescue
+                from a flooded area. Trish loves playing with her new sister, Else.</p>
+            <a class="card-link" href="#">About Me</a>
+            <a class="card-link" href="#">My Pets</a>
+            <a class="card-link" href="#">Client Slideshow</a>
+        </section>
+
+        <section class="card mb-5" id="drwong">
+            <img class="card-img img-fluid" src="images/doctor-wong.jpg" alt="Doctor Wong Photo">
+            <h2 class="card-title">Dr. Olivia Wong</h2>
+            <h5 class="card-subtitle">Preventive Care</h5>
+            <p class="card-text">Dr. Wong is a cancer survivor who was fortunate enough to get to spend time with a
+                therapy dog
+                during
+                her recovery. She became passionate about therapy animals, and has started her own foundation to
+                train
+                and provide education to patients in recovery. Now she gets her own dose of daily therapy from her
+                husky, Lilla.</p>
+            <a class="card-link" href="#">About Me</a>
+            <a class="card-link" href="#">My Pets</a>
+            <a class="card-link" href="#">Client Slideshow</a>
+        </section>
+    </div><!-- content container -->
+
+    <!-- Practice with Card layouts. Not correct see the end exercices
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <section class="card mb-5" id="drwinthrop">
+                        <div class="card-header">
+                            <h2 class="card-title">Dr. Stanley Winthrop</h2>
+                            <h5 class="card-subtitle">Behaviorist</h5>
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img img-fluid" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
+                            <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who
+                                he
+                                adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet
+                                adoption,
+                                and
+                                works tireless hours outside the clinic, performing free spay and neuter surgeries for
+                                the
+                                shelter.</p>
+                            <div class="card-footer">
+                                <a class="card-link" href="#">About Me</a>
+                                <a class="card-link" href="#">My Pets</a>
+                                <a class="card-link" href="#">Client Slideshow</a>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+<div class="col-sm-6">
+                <section class="card mb-5" id="drwinthrop">
+                    <div class="card-body">
+                        <img class="card-img img-fluid" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
+                        <h2 class="card-title">Dr. Stanley Winthrop</h2>
+                        <h5 class="card-subtitle">Behaviorist</h5>
+                        <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he
+                            adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption,
+                            and
+                            works tireless hours outside the clinic, performing free spay and neuter surgeries for the
+                            shelter.</p>
+                        <a class="card-link" href="#">About Me</a>
+                        <a class="card-link" href="#">My Pets</a>
+                        <a class="card-link" href="#">Client Slideshow</a>
+                    </div>
+                </section>
+            </div>
+
+                <section class="card mb-5 bg-primary text-light" id="drchase">
+                    <img class="card-img-top img-fluid" src="images/doctor-chase.jpg" alt="Doctor Chase Photo">
+                    <div class="card-body">
+                        <h2 class="card-title">Dr. Elizabeth Chase</h2>
+                        <h5 class="card-subtitle">Dentistry</h5>
+                        <p class="card-text">Dr. Chase spends much of her free time helping the local bunny rescue
+                            organization find homes
+                            for
+                            bunnies, such as Kibbles - a Dalmatian bunny who is part of the large Chase household,
+                            including
+                            two dogs, three cats, and a turtle.</p>
+                        <a class="card-link text-light" href="#">About Me</a>
+                        <a class="card-link text-light" href="#">My Pets</a>
+                        <a class="card-link text-light" href="#">Client Slideshow</a>
+                    </div>
+                </section>
+
+                <section class="card mb-5 bg-primary text-light" id="drchase">
+                    <div class="card-body">
+                        <img class="card-img img-fluid" src="images/doctor-chase.jpg" alt="Doctor Chase Photo">
+                        <h2 class="card-title">Dr. Elizabeth Chase</h2>
+                        <h5 class="card-subtitle">Dentistry</h5>
+                        <p class="card-text">Dr. Chase spends much of her free time helping the local bunny rescue
+                            organization find homes
+                            for
+                            bunnies, such as Kibbles - a Dalmatian bunny who is part of the large Chase household,
+                            including
+                            two dogs, three cats, and a turtle.</p>
+                        <a class="card-link text-light" href="#">About Me</a>
+                        <a class="card-link text-light" href="#">My Pets</a>
+                        <a class="card-link text-light" href="#">Client Slideshow</a>
+                    </div>
+                </section>
+
+                <section class="card mb-5 border-warning" id="drsanders">
+                    <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Dr. Kenneth Sanders</h2>
+                        <h5 class="card-subtitle">Nutritionist</h5>
+                        <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new
+                            house.
+                            After searching
+                            for
+                            weeks
+                            for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has
+                            three
+                            cats.</p>
+                        <a class="card-link" href="#">About Me</a>
+                        <a class="card-link" href="#">My Pets</a>
+                        <a class="card-link" href="#">Client Slideshow</a>
+                    </div>
+                </section>
+
+                <section class="card mb-5" id="drsanders">
+                    <div class="card-body">
+                        <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+                        <h2 class="card-title">Dr. Kenneth Sanders</h2>
+                        <h5 class="card-subtitle">Nutritionist</h5>
+                        <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a
+                            new house.
+                            After searching
+                            for
+                            weeks
+                            for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has
+                            three
+                            cats.</p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a class="list-group-item" href="#">About Me</a>
+                        <a class="list-group-item" href="#">My Pets</a>
+                        <a class="list-group-item" href="#">Client Slideshow</a>
+                    </div>
+                </section>
+
+            </div>
+        </div> 
+    -->
+
+    <!-- Practice with Modals -->
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+
+                <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#servicesmodal">More
+                    Info</button>
+
+                <a class="mt-4" data-toggle="modal" href="#servicesmodal">More Info</a>
+                <!-- Modal doesn't function-->
+                <div class="modal fade" id="#servicesmodal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Pest Control</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div><!-- modal-header -->
+                            <div class="modal-body">
+                                <p>We offer the latest advances in safe and effective prevention and treatment of
+                                    fleas, ticks, worms, heart worm, and other parasites..</p>
+                            </div><!-- modal-body -->
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-dismiss="modal">Back</button>
+                            </div>
+                        </div><!-- modal content -->
+                    </div><!-- modal-dialog -->
+                </div><!-- modal fade -->
+
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+
+    <!-- Practice with PopOvers -->
+    <div class="container mt-4">
+
+        <h1>Our Commitment <small>to you</small></h1>
+        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and
+            treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the
+            wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments
+            and&nbsp;cures.</p>
+        <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative
+            health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet
+            receives the most appropriate care at crucial milestones. We want to give your pet a long and
+            healthy&nbsp;life.</p>
+
+        <button type="button" class="btn btn-info" data-toggle="popover" data-placement="top" title="Standard Checkups"
+            data-content="Out standard checkups offer Ultrasounds, X-rays and dental cleanings.">
+            Checkup Info
+        </button>
+    </div><!-- content container -->
+
+    <!-- Practice with Alerts -->
+    <div class="container mt-4">
+
+        <h1>Our Commitment <small>to you</small></h1>
+        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and
+            treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the
+            wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments
+            and&nbsp;cures.</p>
+
+        <div class="alert alert-info alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="alert-heading">Standard Checkups</h4>
+            <p class="mb-2">Our standard checkups offer ultrasounds, x-rays and dental cleanings.</p>
+            <a class="alert-link" href="#">More Info</a>
+        </div>
+
+        <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative
+            health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet
+            receives the most appropriate care at crucial milestones. We want to give your pet a long and
+            healthy&nbsp;life.</p>
+
+    </div><!-- content container -->
+
+    <!-- Practice with Dropdown. Issue the menu of the dropdown was not displayed -->
+    <div class="container mt-4">
+
+        <h1>Our Commitment <small>to you</small></h1>
+        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and
+            treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the
+            wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments
+            and&nbsp;cures.</p>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Services
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-header">Service Options</div>
+                <a class="dropdown-item" href="#">Grooming</a>
+                <a class="dropdown-item" href="#">General Health</a>
+                <a class="dropdown-item" href="#">Nutrition</a>
+                <a class="dropdown-item" href="#">Pest Control</a>
+                <a class="dropdown-item" href="#">Vaccinations</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other</a>
+            </div>
+        </div><!-- dropdown -->
+
+        <p>We strive to be your pet's medical staff experts from youth through the senior years. We build preventative
+            health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet
+            receives the most appropriate care at crucial milestones. We want to give your pet a long and
+            healthy&nbsp;life.</p>
+    </div><!-- content container -->
+
+    <!-- Practice with Collapse and Accordions -->
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+
+                <h2>Services</h2>
+
+                <!-- The Pest control button doesn't hide the text when clicked the second time. Collapse doesn't function-->
+
+                <button class="btn btn-primary mb-3" data-toggle="collapse" data-target="#pestcontrol" aria-expanded="List to Pest Control">Pest
+                    Control</button>
+                <div id="pestcontrol  mb-3" class="collapse">
+                    We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms,
+                    heart worm, and other parasites.
+                </div>
+
+                <div id="servicesaccordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="card">
+
+                        <div class="card-header" role="tab" id="groomingheading">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#servicesaccordion" href="#grooming"
+                                    aria-expanded="true" aria-controls="grooming">Grooming</a>
+                            </h5>
+                        </div><!-- card header -->
+
+                        <div id="grooming" class="collapse show" role="tabpanel" aria-labelledby="groomingheading">
+                            <div class="card-block">
+                                <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and
+                                    other challenging skin conditions.</p>
+                            </div>
+                        </div><!-- collapse -->
+
+                    </div><!-- card -->
+
+                    <div class="card">
+
+                        <div class="card-header" id="generalhealthheading">
+                            <h5 class="mb-0"><a href="#generalhealth">General Health</a></h5>
+                        </div><!-- card header -->
+
+                        <div id="generalhealth">
+                            <div class="card-block">
+                                <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of
+                                    our general health services.</p>
+                            </div>
+                        </div><!-- card collapse -->
+
+                    </div><!-- card -->
+
+                    <div class="card">
+
+                        <div class="card-header" role="tab" id="nutritionheading">
+                            <h5 class="mb-0"><a href="#nutrition">Nutrition</a></h5>
+                        </div><!-- card header -->
+
+                        <div id="nutrition">
+                            <div class="card-block">
+                                <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition
+                                    plan for optimum health and disease prevention.</p>
+                            </div>
+                        </div><!-- collapse -->
+
+                    </div><!-- card -->
+
+                </div><!-- servicesaccordion -->
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+
+
+    <!-- Practice with Interactive component -->
+    <!-- Practice with Tooltips -->
+    <div class="container mt-4">
+
+        <section class="content" id="mission">
+            <h1>Our Commitment <small>to you</small></h1>
+            <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Exams, ultrasounds and more">medicine</a>
+                in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and
+                fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the
+                safest treatments and&nbsp;cures.</p>
+            <p>We strive to be your pet's medical staff experts from youth through the senior years. We build
+                preventative health care plans for each and every one of our patients, based on breed, age, and sex, so
+                that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long
+                and healthy&nbsp;life.</p>
+        </section>
+
+    </div><!-- content container -->
+
+    <!-- footer example 1
+        <footer class="bg-secondary">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+        </footer> -->
+ 
+    <footer class="bd-footer bg-secondary text-light">
+        <div class="container-fluid p-3 p-md-5">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+
+            <ul class="bd-footer-links">
+                <li><a href="http://localhost:3000//Home.html">Home</a></li>
+                <li><a href="http://localhost:3000/about.html">About</a></li>
+                <li><a href="http://localhost:3000/services.html">Services</a></li>
+                <li><a href="http://localhost:3000/prices.html">Prices</a></li>
+                <li><a href="http://localhost:3000//Staff.html">Staff</a></li>
+                <li><a href="http://localhost:3000/testimonials.html">Testimonials</a></li>
+                <li><a href="http://localhost:3000/questionnaire.html">Questionnaire</a></li>
+                <li><a href="http://localhost:3000/help.html">Help</a></li>
+                <li><a href="http://localhost:3000/Pet%20story.html">Pet story</a></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </footer>
+
+    <!-- Java Script -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="path/to/dist/js/tether.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        })
+
+
+        $(function () {
+            var topoffset = 70; //variable for menu height
+
+            //Use smooth scrolling when clicking on navigation
+            $('.navbar-nav a').click(function () {
+                if (location.pathname.replace(/^\//, '') ===
+                    this.pathname.replace(/^\//, '') &&
+                    location.hostname === this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top - topoffset
+                        }, 500);
+                        return false;
+                    } //target.length
+                } //click function
+            }); //smooth scrolling
+
+        });
+    </script>
+    <!-- author links 8. Collapse and accordions
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+author links 8
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+-->
+</body>
+
+</html>

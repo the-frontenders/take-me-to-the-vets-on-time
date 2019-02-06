@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Take me to the vet</title>
+    <style>
+        img,
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Practice with Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand d-none d-lg-block">Take me to the vet</div>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="http://localhost:3000//Home.html">Home</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/about.html">About</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/services.html">Services</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/prices.html">Prices</a>
+                <a class="nav-item nav-link" href="http://localhost:3000//Staff.html">Staff</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/testimonials.html">Testimonials</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/questionnaire.html">Questionnaire</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/help.html">Help</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/Pet%20story.html">Pet story</a>
+            </div><!-- navbar-nav -->
+
+            <form class="form-inline d-none d-md-block">
+                <div class="input-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input class="form-control" type="text" id="search" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Go</button>
+                    </div><!-- input-group-append -->
+                </div><!-- input-group -->
+            </form>
+        </div><!-- container -->
+    </nav>
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+    <div class="container mt-4 mb-5">
+        <h1 class="text-danger">Help Another Pet</h1>
+        <p>We know you take good care of your pet friend. Think that are other owners who can't afford the medical
+            costs for their pets or the food costs. Your donation will help other owners in need to take care of their
+            pets and furfill their basic needs.<br>
+            Please give a little of your precious time to complete the form below and make a donation which will surely
+            make a pet happy. Thank you in advance for your contribution.<br> Please advise other people to donate if
+            you think that is a good thing and explain them a donation impact.</p>
+        <form class="bg-light">
+            <fieldset class="form-group">
+                <legend class="text-danger">Donation Form</legend>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Your Name">
+                </div><!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="owneremail">Email</label>
+                    <input class="form-control" type="text" id="owneremail" placeholder="Email">
+                </div><!-- form-group -->
+
+                <div class="form-group form-row">
+                    <label class="col-form-label text-md-right col-md-2" for="owneremail">Address</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" id="owneremail" placeholder="Address">
+                    </div>
+                </div><!-- form-group -->
+
+                <div class="form-group row">
+                    <div class="form-group offset-md-2 col">
+                        <label class="col-form-label sr-only" for="ownercity">City</label>
+                        <input class="form-control" type="text" id="ownercity" placeholder="City">
+                    </div><!-- form-group -->
+
+                    <div class="form-group col">
+                        <label class="col-form-label sr-only" for="ownerzip">Zip</label>
+                        <input class="form-control" type="text" id="ownerzip" placeholder="Zip">
+                    </div><!-- form-group -->
+                </div><!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="donationamt">Donation Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" id="confirm-donation" checked aria-label="Checkbox for confirming donation">
+                            </div>
+                        </div>
+                        <div class="input-group-text">$</div>
+                        <input type="text" class="form-control" id="donationamt" placeholder="Amount">
+                        <div class="input-group-append">
+                            <div class="input-group-text">.00</div>
+                        </div>
+                    </div>
+                </div><!-- form-group -->
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+            </fieldset><!-- fieldset -->
+        </form>
+    </div><!-- content container -->
+
+
+    <!-- Helping programs -->
+    <div class="container">
+        <h1 class="text-danger mb-4">Helping programs</h1>
+
+        <div class="row">
+            <section class="col-12">
+                <div id="servicesaccordion" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="takeMeHomeHeading">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#servicesaccordion" href="#takeMeHome"
+                                    aria-expanded="true" aria-controls="takeMeHome">Take me home</a>
+                            </h5>
+                        </div><!-- card header -->
+
+                        <div id="takeMeHome" class="collapse show" role="tabpanel" aria-labelledby="takeMeHomeHeading">
+                            <div class="card-block">
+                                <p>You can help by taking home the pets of oter owners which visit our clining for the
+                                    time they are in vacation. We offer a full list of the pets owner who need this
+                                    service.</p>
+                            </div>
+                        </div><!-- collapse -->
+                    </div><!-- card -->
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="walkMeHeading">
+                            <h5 class="mb-0"><a href="#walkMe" data-toggle="collapse" data-parent="#servicesaccordion"
+                                    aria-expanded="true" aria-controls="walkMe">Walk me</a></h5>
+                        </div><!-- card header -->
+                        <div id="walkMe">
+                            <div class="card-block">
+                                <p>Among our clients there are some that work very late. Even if they love their pets
+                                    as much as you do they don't have the time to walk them as often as you do. If you
+                                    want to take to a walk another pet than your own please see ower list of owners
+                                    which need this service.</p>
+                            </div><!-- card block -->
+                        </div><!-- card collapse -->
+                    </div><!-- card -->
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="shareFoodHeading">
+                            <h5 class="mb-0"><a href="#shareFood" data-toggle="collapse" data-parent="#servicesaccordion"
+                                    aria-expanded="true" aria-controls="shareFood">Share Food</a></h5>
+                        </div><!-- card header -->
+                        <div id="shareFood">
+                            <div class="card-block">
+                                <p>Some of our owners don't have a lot of resources to feed their pets. If you think
+                                    you can share your pet's food with other owners please do. Their pets will be happy
+                                    about it. And remember sharing food is caring.</p>
+                            </div><!-- card block -->
+                        </div><!-- nutrition -->
+                    </div><!-- card -->
+
+                </div><!-- servicesaccordion -->
+            </section>
+        </div><!-- row -->
+
+        <div class="mt-4">
+            <h3 class="text-danger">Share your ideas</h3>
+            <p>If you have other ideas regading the Helping programs please share it. We are searching for new ways of
+                extending our help method to as much pets as possible.<br><br>
+                The <strong>Take me home</strong> program is now funcitional because Ingrid Person one of our clients
+                came up with the
+                idea. We like it so much that we implemented immediately.<br><br>
+                This programs is one of our succesful programs and helps a lot of pets. We receive every week positive
+                comments from owners about how helpful this program truly is.</p>
+        </div>
+    </div><!-- container -->
+
+    <footer class="bd-footer bg-secondary text-light">
+        <div class="container-fluid p-3 p-md-5">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+
+            <ul class="bd-footer-links">
+                <li><a href="http://localhost:3000//Home.html">Home</a></li>
+                <li><a href="http://localhost:3000/about.html">About</a></li>
+                <li><a href="http://localhost:3000/services.html">Services</a></li>
+                <li><a href="http://localhost:3000/prices.html">Prices</a></li>
+                <li><a href="http://localhost:3000//Staff.html">Staff</a></li>
+                <li><a href="http://localhost:3000/testimonials.html">Testimonials</a></li>
+                <li><a href="http://localhost:3000/questionnaire.html">Questionnaire</a></li>
+                <li><a href="http://localhost:3000/help.html">Help</a></li>
+                <li><a href="http://localhost:3000/Pet%20story.html">Pet story</a></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </footer>
+    <!-- Java Script -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="path/to/dist/js/tether.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

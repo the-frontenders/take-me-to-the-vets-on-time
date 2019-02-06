@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Staff</title>
+    <style>
+        .logo {
+            width: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Practice with Input Forms on Navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand d-none d-lg-block">Take me to the vet</div>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="http://localhost:3000//Home.html">Home</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/about.html">About</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/services.html">Services</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/prices.html">Prices</a>
+                <a class="nav-item nav-link" href="http://localhost:3000//Staff.html">Staff</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/testimonials.html">Testimonials</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/questionnaire.html">Questionnaire</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/help.html">Help</a>
+                <a class="nav-item nav-link" href="http://localhost:3000/Pet%20story.html">Pet story</a>
+            </div><!-- navbar-nav -->
+
+            <form class="form-inline d-none d-md-block">
+                <div class="input-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input class="form-control" type="text" id="search" placeholder="Search for...">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Go</button>
+                    </div><!-- input-group-append -->
+                </div><!-- input-group -->
+            </form>
+        </div><!-- container -->
+    </nav>
+
+    <!-- Header Background Image + Logo -->
+    <header class="clearfix" style="height: 50vh; background: url(images/background.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container float-left">
+            <img class="logo" src="images/wisdompetlogo.svg" alt="Wisdom Pet Logo">
+        </div>
+    </header>
+
+    <!-- Practice with Breadcrumbs-->
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <!-- If you use an external .css document, loaded before the Bootstrap style link -->
+                <style>
+                    .breadcrumb-item+.breadcrumb-item::before {
+                        content: '/'
+                    }
+                </style>
+
+                <!-- the active class doesn't function. Findout active on li or on a? -->
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Staff</a></li>
+                    <li class="breadcrumb-item"><a href="#">Nutrition</a></li>
+                </ol>
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+
+    <!-- Main content-->
+    <!-- Out team General Information -->
+    <div class="container">
+        <section class="content" id="staff">
+            <h1 class="text-danger">Our Team</h1>
+            <p class="bg-light text-secondary">Our <strong>Veterinary Hospital Take me to the vet</strong> is proud to
+                introduce you to our talented and
+                compassionate team of veterinarians. We are glad to offer you the best in veterinary care in the region
+                of San Francisco. You can find below information about our doctors and their personal pets, hobbies and
+                other intresting things.</p>
+        </section>
+    </div>
+
+
+
+    <!-- Doctors Presentation Cards -->
+    <div class="container">
+        <h2 class="text-danger">Veterinarians</h2>
+        <section class="card mb-5" id="drwinthrop">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Stanley Winthrop</h2>
+                <h5 class="card-subtitle">Behaviorist</h5>
+            </div><!-- card-header -->
+
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
+                <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he
+                    adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and
+                    works tireless hours outside the clinic, performing free spay and neuter surgeries for the
+                    shelter.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+
+        <section class="card mb-5" id="drchase">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Elizabeth Chase</h2>
+                <h5 class="card-subtitle">Dentistry</h5>
+            </div><!-- card-header -->
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-chase.jpg" alt="Doctor Chase Photo">
+                <p class="card-text">Dr. Chase spends much of her free time helping the local bunny rescue
+                    organization find homes for bunnies, such as Kibbles - a Dalmatian bunny who is part of the large
+                    Chase
+                    household,
+                    including two dogs, three cats, and a turtle.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+
+        <section class="card mb-5" id="drsanders">
+            <div class="card-header">
+                <h2 class="title">Dr. Kenneth Sanders</h2>
+                <h5 class="subtitle">Nutritionist</h5>
+            </div><!-- card-header -->
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
+                <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new house.
+                    After searching for
+                    weeks
+                    for Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three cats.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+
+        <section class="card mb-5" id="drgardner">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Michael Gardner</h2>
+                <h5 class="card-subtitle">Practitioner</h5>
+            </div><!-- card-header -->
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/Michael Gardner.jpg" alt="Doctor Michael Gardner Photo">
+                <p class="card-text">When Dr. Gardner was 8 his family moved to Colorado, where he spent most of his
+                    free time playing on
+                    his
+                    neighbors farm. He came to love spending time with the horses, chickens, and goats. He still
+                    considers
+                    all of his family's farm animals his own, but Frank, his Cattle dog is his nearest and dearest
+                    friend.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+
+        <section class="card mb-5" id="drruiz">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Brook Ruiz</h2>
+                <h5 class="card-subtitle">Radiology</h5>
+            </div><!-- card-header -->
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/Brook Ruiz.jpg" alt="Doctor Brook Ruiz Photo">
+                <p class="card-text">Dr. Brook has spent countless hours helping the local animal shelter with injured
+                    animals ,that find
+                    their way into their doors. She recently adopted a new feline friend, Trish, that she helped rescue
+                    from a flooded area. Trish loves playing with her new sister, Else.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+
+        <section class="card mb-5" id="drmckenny">
+            <div class="card-header">
+                <h2 class="card-title">Dr. Olivia Mckenny</h2>
+                <h5 class="card-subtitle">Preventive Care</h5>
+            </div><!-- card-header -->
+            <div class="card-body">
+                <img class="card-img img-fluid" src="images/Olivia Mckenny.jpg" alt="Doctor Olivia Mckenny Photo">
+                <p class="card-text">Dr. Mckenny is a cancer survivor who was fortunate enough to get to spend time
+                    with a therapy dog
+                    during
+                    her recovery. She became passionate about therapy animals, and has started her own foundation to
+                    train
+                    and provide education to patients in recovery. Now she gets her own dose of daily therapy from her
+                    husky, Lilla.</p>
+                <div class="card-footer">
+                    <a class="card-link" href="#">About Me</a>
+                    <a class="card-link" href="#">My Pets</a>
+                    <a class="card-link" href="#">Client Slideshow</a>
+                </div><!-- card-footer -->
+            </div><!-- card-body -->
+        </section>
+    </div><!-- container -->
+
+    <!-- Practice with Media -->
+    <div class="container">
+        <h2 class="text-danger">Assistants</h2>
+        <section class="media mb-4 bg-light" id="drwinthrop">
+            <img class="d-flex align-self-center img-fluid mr-3 rounded" style="width: 100px;" src="images/doctor-Nora Joshua.jpg"
+                alt="Doctor Nora Joshua Photo">
+
+            <div class="media-body">
+                <h2>Dr. Nora Joshua</h2>
+                <h5>Assistant</h5>
+                <p>Dr. Nora Joshua is the guardian of Missy, a three-year old Llaso mix, who he adopted at the
+                    shelter. Dr. Nora Joshua is passionate about spay and neuter and pet adoption, and works tireless
+                    hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
+                <a href="#">About Me</a>
+                <a href="#">My Pets</a>
+                <a href="#">Client Slideshow</a>
+            </div>
+        </section>
+
+        <section class="media mb-4 bg-light" id="drchase">
+            <img class="d-flex align-self-center img-fluid mr-3 rounded" style="width: 100px;" src="images/Doctor-Ally Person.jpg"
+                alt="Doctor Ally Person Photo">
+            <div class="media-body">
+                <h2>Dr. Ally Person</h2>
+                <h5>Assistant</h5>
+                <p>Dr. Ally Person spends much of her free time helping the local bunny rescue organization find homes
+                    for bunnies, such as Kibbles - a Dalmatian bunny who is part of the large Chase household,
+                    including two dogs, three cats, and a turtle.</p>
+                <a href="#">About Me</a>
+                <a href="#">My Pets</a>
+                <a href="#">Client Slideshow</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bd-footer bg-secondary text-light">
+        <div class="container-fluid p-3 p-md-5">
+            <p>Designed and build with all the love in the world by: Tuia Awesome</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com</a>.</p>
+
+            <ul class="bd-footer-links">
+                <li><a href="http://localhost:3000//Home.html">Home</a></li>
+                <li><a href="http://localhost:3000/about.html">About</a></li>
+                <li><a href="http://localhost:3000/services.html">Services</a></li>
+                <li><a href="http://localhost:3000/prices.html">Prices</a></li>
+                <li><a href="http://localhost:3000//Staff.html">Staff</a></li>
+                <li><a href="http://localhost:3000/testimonials.html">Testimonials</a></li>
+                <li><a href="http://localhost:3000/questionnaire.html">Questionnaire</a></li>
+                <li><a href="http://localhost:3000/help.html">Help</a></li>
+                <li><a href="http://localhost:3000/Pet%20story.html">Pet story</a></li>
+            </ul>
+        </div><!-- container-fluid -->
+    </footer>
+
+
+</body>
+
+</html>
